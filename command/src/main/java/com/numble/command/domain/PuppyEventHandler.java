@@ -29,5 +29,4 @@ public class PuppyEventHandler {
         puppyEventSourcing.send(event);
     }
 
-
 }
