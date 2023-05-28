@@ -1,4 +1,4 @@
-package com.numble.command.application.puppy;
+package com.numble.command.application;
 
 import com.numble.command.domain.PuppyService;
 import com.numble.command.infrastructure.util.ClientAddressUtil;

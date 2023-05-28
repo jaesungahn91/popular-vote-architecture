@@ -1,4 +1,4 @@
-package com.numble.command.application.puppy;
+package com.numble.command.application;
 
 
 import com.numble.core.domain.Puppy;

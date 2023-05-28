@@ -1,4 +1,4 @@
-package com.numble.command.application.puppy;
+package com.numble.command.application;
 
 import jakarta.validation.constraints.NotBlank;
 

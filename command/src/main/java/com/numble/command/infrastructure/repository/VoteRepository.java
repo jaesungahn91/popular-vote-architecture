@@ -1,4 +1,4 @@
-package com.numble.command.infrastructure.repository.vote;
+package com.numble.command.infrastructure.repository;
 
 import com.numble.core.domain.Vote;
 import com.numble.core.domain.VoteKey;

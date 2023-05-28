@@ -1,7 +1,7 @@
 package com.numble.command.domain;
 
 import com.numble.command.infrastructure.repository.PuppyRepository;
-import com.numble.command.infrastructure.repository.vote.VoteRepository;
+import com.numble.command.infrastructure.repository.VoteRepository;
 import com.numble.core.domain.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.ApplicationEventPublisher;
