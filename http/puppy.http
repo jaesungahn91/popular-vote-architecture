@@ -1,0 +1,20 @@
+### 강아지 단일 등록
+POST localhost:8080/puppies
+Content-Type: application/json
+
+{
+  "name": "코코",
+  "image": "https://dimg.donga.com/wps/NEWS/IMAGE/2022/01/28/111500268.2.jpg",
+  "description": "깨발랄하고 온순한 성격이에요. 달리기를 잘해요!"
+}
+
+### 강아지 투표
+POST localhost:8080/puppies/1/vote
+Content-Type: application/json
+
+### 강아지 취소
+DELETE localhost:8080/puppies/1/vote
+Content-Type: application/json
+
+### 강아지 리스트 조회
+GET localhost:8081/puppies
