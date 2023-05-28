@@ -6,6 +6,7 @@ Redis와 Kafka, Spring을 활용한 강아지 인기투표 아키텍쳐 만들�
 
 ![architecture](./doc/architecture.png)
 
+### 결과물
 - 백엔드 서버 소스코드 (Java, Kotlin 등)
     - https://github.com/jaesungahn91/popular-vote-architecture
 - 실행 중인 백엔드 서버 (Github readme.md에 서버의 접속 가능한 URL을 작성해주세요.)
