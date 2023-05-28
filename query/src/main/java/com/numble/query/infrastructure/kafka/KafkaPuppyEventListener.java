@@ -3,6 +3,7 @@ package com.numble.query.infrastructure.kafka;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.numble.core.domain.Puppy;
 import com.numble.core.domain.PuppyCreatedEvent;
+import com.numble.query.domain.puppy.PuppyModel;
 import com.numble.query.infrastructure.redis.PuppyRedisRepository;
 import com.numble.query.infrastructure.repository.PuppyJpaRepository;
 import lombok.RequiredArgsConstructor;
@@ -30,9 +31,7 @@ public class KafkaPuppyEventListener {
         Puppy puppy = puppyJpaRepository.findById(event.getPuppyId())
                 .orElseThrow(NoSuchElementException::new);
 
-        puppyRedisRepository.save(puppy);
-        log.info("><>< : {}", puppy.toString());
-
+        puppyRedisRepository.save(PuppyModel.fromPuppy(puppy));
     }
 
 }

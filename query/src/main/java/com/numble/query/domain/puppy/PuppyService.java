@@ -1,6 +1,5 @@
 package com.numble.query.domain.puppy;
 
-import com.numble.query.application.puppy.PuppyModel;
 import com.numble.query.infrastructure.redis.PuppyRedisRepository;
 import com.numble.query.infrastructure.repository.PuppyJpaRepository;
 import lombok.RequiredArgsConstructor;
@@ -19,9 +18,7 @@ public class PuppyService {
     private final PuppyJpaRepository puppyJpaRepository;
 
     public List<PuppyModel> getPuppies() {
-        return puppyRedisRepository.findAll().stream()
-                .map(PuppyModel::fromPuppy)
-                .collect(toList());
+        return puppyRedisRepository.findAll();
     }
 
     public PuppyModel getPuppy(long id) {

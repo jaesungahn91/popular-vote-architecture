@@ -1,5 +1,6 @@
 package com.numble.query.application.puppy;
 
+import com.numble.query.domain.puppy.PuppyModel;
 import com.numble.query.domain.puppy.PuppyService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;

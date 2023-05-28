@@ -1,13 +1,13 @@
 package com.numble.query.infrastructure.redis;
 
-import com.numble.core.domain.Puppy;
+import com.numble.query.domain.puppy.PuppyModel;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 
-public interface PuppyRedisRepository extends CrudRepository<Puppy, Long> {
+public interface PuppyRedisRepository extends CrudRepository<PuppyModel, Long> {
 
     @Override
-    List<Puppy> findAll();
+    List<PuppyModel> findAll();
 
 }
